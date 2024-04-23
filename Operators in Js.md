@@ -11,12 +11,12 @@ The Multiplication Operator * multiplies values
 The Comparison Operator > compares values
 ```
 ```
-## Arithmatic Operators : +,-,*,/
-## Modulus : %
-## Exponential : **
+### Arithmatic Operators : +,-,*,/
+### Modulus : %
+### Exponential : **
 ```
 ```
-### Solutions (Javascript)
+## Solutions (Javascript)
 ```
 
 let a=10;
@@ -30,6 +30,13 @@ console.log("a / b = ",a/b); //2
 console.log("a % b = ",a%b); //0  Modulus Operator
 console.log("a ** b = ",a**b); // 10^5 
 ```
-## Unary Operators
+### Unary Operators
 Increment: i++
 Decrement: i--
+
+### Assignment Operator: = += -= *= %= **=
+### Comparison Operator: ==,===,!=,!==, <,<=,>,>=
+### logical Operators: 
+    Logical AND: &&
+    Logical OR: ||
+    Logical NOT: !
