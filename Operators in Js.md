@@ -30,3 +30,6 @@ console.log("a / b = ",a/b); //2
 console.log("a % b = ",a%b); //0  Modulus Operator
 console.log("a ** b = ",a**b); // 10^5 
 ```
+## Unary Operators
+Increment: i++
+Decrement: i--
