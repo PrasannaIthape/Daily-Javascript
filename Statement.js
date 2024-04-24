@@ -30,3 +30,4 @@ if (no % 2 === 0) {
 let age1 = 24;
 let result = age1 >= 18 ? "adult" : "not adult";
 console.log(result);
+
