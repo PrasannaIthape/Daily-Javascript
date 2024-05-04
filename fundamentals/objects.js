@@ -30,7 +30,6 @@ userInfo(3, 5);
 //     name: "John", 
 //     age: 30 
 // };
-
 // alert("age" in user); // true, user.age exists
 // alert("blabla" in user);
 
@@ -74,6 +73,7 @@ let user = {
   
   alert( user.name );
 
+  
 //   nested cloning
 let user1 = {
     name: "John",
