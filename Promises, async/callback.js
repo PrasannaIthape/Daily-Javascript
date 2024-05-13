@@ -18,20 +18,36 @@
 
 // ---------
 // Asyncronous
-function hello(){
-    console.log(`hello`);
-}
-setTimeout(hello,3000);
+// function hello(){
+//     console.log(`hello`);
+// }
+// setTimeout(hello,3000);
+
 
 // Callback : 
 // A callback is a function passed as an argument to another function
 // This technique allows a function to call another function
 // A callback function can run after another function has finished
 
-function add(a,b){
-    console.log(a+b)
+// function add(a,b){
+//     console.log(a+b)
+// }
+// function sum(a,b,calculate){
+//     calculate(a,b);
+// }
+// sum(1,2,add);
+
+// Callback Hell
+function getData(dataId,getNextData){
+    setTimeout(()=>{
+        console.log("Data: ",dataId);
+        if(getNextData){
+            getNextData();
+        }
+    },2000)
 }
-function sum(a,b,calculate){
-    calculate(a,b);
-}
-sum(1,2,add);
+getData(1,()=>{
+    getData(2,()=>{
+        getData(3);
+    });
+});
