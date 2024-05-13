@@ -51,19 +51,21 @@ function asyncFunc2() {
     setTimeout(() => {
       console.log("Data 2");
       resolve("success");
-    }, 4000);
+    }, 6000);
   });
 }
-console.log("Fetching Data1...");
-let p1 = asyncFunc1();
-asyncFunc1.then(()=>{
+var allP = Promise.all([ asyncFunc1(), asyncFunc2() ]);
+console.log("data all = ", allP);
+//console.log("Fetching Data1...");
+// let p1 = asyncFunc1();
+// asyncFunc1.then(()=>{
 
-})
-p1.then(() => {
-  console.log("Fetching Data2...");
-  let p2 = asyncFunc2();
-  p2.then(() => {});
-});
+// })
+// p1.then(() => {
+//   console.log("Fetching Data2...");
+//   let p2 = asyncFunc2();
+//   p2.then(() => {});
+// });
 
 // 
 // "async and await make promises easier to write"
