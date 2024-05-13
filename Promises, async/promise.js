@@ -56,8 +56,18 @@ function asyncFunc2() {
 }
 console.log("Fetching Data1...");
 let p1 = asyncFunc1();
+asyncFunc1.then(()=>{
+
+})
 p1.then(() => {
   console.log("Fetching Data2...");
   let p2 = asyncFunc2();
   p2.then(() => {});
 });
+
+// 
+// "async and await make promises easier to write"
+
+// async makes a function return a Promise
+
+// await makes a function wait for a Promise
